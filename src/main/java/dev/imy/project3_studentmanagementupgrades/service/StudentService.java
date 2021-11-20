@@ -31,16 +31,19 @@ public class StudentService implements BaseService<Student> {
     }
 
     @Override
+    @Transactional
     public Student save(Student student) {
         return studentRepository.save(student);
     }
 
     @Override
+    @Transactional
     public Student update(Student student) {
         return studentRepository.save(student);
     }
 
     @Override
+    @Transactional
     public void deleteByID(int id) {
         studentRepository.deleteById(id);
     }

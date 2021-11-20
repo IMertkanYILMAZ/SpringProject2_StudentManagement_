@@ -25,8 +25,8 @@ public class Student {
     private String address;
     private String gender;
 
-    //@ManyToMany(mappedBy = "studentSet")
-    //private Set<Courses> coursesSet;
+    @ManyToMany(mappedBy = "studentSet")
+    private Set<Courses> coursesSet;
 
 }
 
